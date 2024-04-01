@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./Pages/Home";
-import Technology from "./Pages/Technology";
+import AppCovid from "./Pages/AppCovid";
 import { ColorModeContext, useMode } from "./theme";
 import {  CssBaseline, ThemeProvider } from "@mui/material";
 import Navbar from "./Pages/Navbar";
@@ -17,7 +17,7 @@ const App =() => {
                     <Navbar></Navbar>
                 <Routes>
                     <Route path="/" element={<Home></Home>}></Route>
-                    <Route path="/pages/technology" element={<Technology></Technology>}></Route>
+                    <Route path="/appcovid" element={<AppCovid></AppCovid>}></Route>
                 </Routes>
                 </BrowserRouter>
             </ThemeProvider>

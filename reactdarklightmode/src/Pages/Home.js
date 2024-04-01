@@ -1,21 +1,15 @@
 import React, { useContext } from "react";
 import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-//import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
-import FeaturedPost from './FeaturedPost';
 import Footer from './Footer';
 import { ColorModeContext } from "../theme";
 import { ThemeProvider, useTheme } from "@mui/material";
 
 
 const sections = [
-  { title: 'Covid-19 Project', url: '/pages/technology' },
+  { title: 'Covid-19 Project', url: '/appcovid' },
 
 ];
 
@@ -31,7 +25,6 @@ const mainFeaturedPost = {
 
 const Home = () => {
   const theme = useTheme();
-  //    const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
   return (
     <ColorModeContext.Provider value={colorMode}>
