@@ -4,9 +4,9 @@ import { ColorModeContext, tokens } from "../theme";
 import { useTheme, Box, IconButton, InputBase } from "@mui/material";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+// import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
+// import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+// import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
                         <DarkModeOutlinedIcon />
                     )}
                 </IconButton>
-                <IconButton>
+                {/* <IconButton>
                     <NotificationsOutlinedIcon />
                 </IconButton>
                 <IconButton>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </IconButton>
                 <IconButton>
                     <PersonOutlinedIcon />
-                </IconButton>
+                </IconButton> */}
 
 
 

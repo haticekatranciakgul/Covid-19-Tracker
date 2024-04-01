@@ -22,7 +22,7 @@ const App =() => {
                     <Route path="/register" element={<Register></Register>}></Route>
                     <Route path="/" element={<Home></Home>}></Route>
                     <Route path="/pages/technology" element={<Technology></Technology>}></Route>
-                </Routes>fgf
+                </Routes>
                 </BrowserRouter>
             </ThemeProvider>
         </ColorModeContext.Provider>
@@ -31,3 +31,10 @@ const App =() => {
 };
 
 export default App;
+
+// app min-width 100vh display flex   flex-direction column  footer margin top aauto
+// position: absolute;
+//     top: 0;
+//     bottom: 0;
+
+
