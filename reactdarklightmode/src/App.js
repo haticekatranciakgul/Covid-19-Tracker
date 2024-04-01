@@ -22,7 +22,7 @@ const App =() => {
                     <Route path="/register" element={<Register></Register>}></Route>
                     <Route path="/" element={<Home></Home>}></Route>
                     <Route path="/pages/technology" element={<Technology></Technology>}></Route>
-                </Routes>
+                </Routes>fgf
                 </BrowserRouter>
             </ThemeProvider>
         </ColorModeContext.Provider>
