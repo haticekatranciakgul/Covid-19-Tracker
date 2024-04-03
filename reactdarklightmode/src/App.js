@@ -5,6 +5,7 @@ import AppCovid from "./Pages/AppCovid";
 import { ColorModeContext, useMode } from "./theme";
 import {  CssBaseline, ThemeProvider } from "@mui/material";
 import Navbar from "./Pages/Navbar";
+import Detail from "./Components/DetailPage/Detail";
 
 
 const App =() => {
@@ -18,7 +19,7 @@ const App =() => {
                 <Routes>
                     <Route path="/" element={<Home></Home>}></Route>
                     <Route path="/appcovid" element={<AppCovid></AppCovid>}></Route>
-                    <Route path="/detail" element={<detail />} />
+                    <Route path="/detail" element={<Detail />} />
                 </Routes>
                 </BrowserRouter>
             </ThemeProvider>

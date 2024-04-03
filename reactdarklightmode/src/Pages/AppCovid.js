@@ -59,7 +59,7 @@ const AppCovid = () => {
     const onCountryChange = async (event) => {
         const countryCode = event.target.value;
 
-        const url = countryCode === 'worldwide' ? 'https://disease.sh/v3/covid-19/all' : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
+        const url = countryCode === 'worldwide' ? 'https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics/' : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
         await fetch(url)
             .then(response => response.json())
             .then(data => {
@@ -106,12 +106,7 @@ const AppCovid = () => {
                         <Map casesType={caseType} countries={mapCountries} center={mapCenter} zoom={mapZoom} />
                     </div>
 
-                    {/* <Card className="app__right">
-                        <CardContent>
-                            <h3>Live Cases by country</h3>
-                            <Table countries={tableData} />
-                        </CardContent>
-                    </Card> */}
+                   
 
                 </Container>
 
