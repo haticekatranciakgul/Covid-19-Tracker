@@ -59,7 +59,7 @@ const AppCovid = () => {
     const onCountryChange = async (event) => {
         const countryCode = event.target.value;
 
-        const url = countryCode === 'worldwide' ? 'https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics/' : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
+        const url = countryCode === 'worldwide' ? 'https://disease.sh/v3/covid-19/all/' : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
         await fetch(url)
             .then(response => response.json())
             .then(data => {
@@ -90,7 +90,7 @@ const AppCovid = () => {
                                 >
                                     <MenuItem value="worldwide">Worldwide</MenuItem>
                                     {countries.map((country) => (
-                                        <MenuItem value={country.value}>{country.name}</MenuItem>
+                                        <MenuItem value={country.value} key={country}>{country}</MenuItem>
 
                                     ))}
                                 </Select>

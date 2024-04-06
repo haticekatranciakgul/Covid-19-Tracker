@@ -21,7 +21,7 @@ function Detail(country) {
         <Container maxWidth="lg">
         
 	
-		
+		  {country}
 		<div className="info-container">
 				<div className="info-confirmed">Cases: {numeral(country.cases).format("0,0")}</div>
 				<div className="info-recovered">Recovered: {numeral(country.recovered).format("0,0")}</div>
