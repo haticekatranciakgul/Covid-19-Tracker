@@ -27,6 +27,7 @@ function Detail() {
                 const response = await fetch(`https://disease.sh/v3/covid-19/countries/${country}`);
                 const data = await response.json();
                 setCountryInfo(data);
+                console.log(data)
             } catch (error) {
                 console.log(error);
             }
@@ -69,6 +70,10 @@ function Detail() {
                                                 <Typography gutterBottom variant="h5" component="div">
                                                 Deaths: {numeral(countryInfo.deaths).format("0,0")}
                                                 </Typography>
+
+                                                {countryInfo.countryInfo.iso2}
+                                                {countryInfo.countryInfo.iso3}
+
                                                
                                             </CardContent>
                                         </CardActionArea>

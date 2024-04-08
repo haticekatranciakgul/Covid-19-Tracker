@@ -29,6 +29,22 @@ const AppCovid = () => {
     const [mapCountries, setMapCountries] = useState([]);
     const [caseType, setCasesType] = useState("cases");
 
+    const casesTypeColors = {
+        cases: {
+            hex: "#CC1034",
+            multiplier: 800,
+        },
+        recovered: {
+            hex: "#7dd71d",
+            multiplier: 1200,
+        },
+        deaths: {
+            hex: "#fb4443",
+            multiplier: 2000,
+        }
+    }
+    
+
     useEffect(() => {
         fetch("https://disease.sh/v3/covid-19/all")
             .then(response => response.json())
@@ -70,15 +86,14 @@ const AppCovid = () => {
             })
     }
 
+    
+
     return (
         <ColorModeContext.Provider value={colorMode}>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <Container maxWidth="lg">
-
-
                     <div className="app__left">
-                        {/* Heading */}
 
                         <div className="app__header">
                             <h1>COVID-19 TRACKER </h1>
@@ -88,11 +103,6 @@ const AppCovid = () => {
                                     onChange={onCountryChange}
                                     value={country}
                                 >
-                                    {/* <MenuItem value="worldwide">Worldwide</MenuItem>
-                                    {countries.map((country) => (
-                                        <MenuItem value={country.value}>{country}</MenuItem>
-
-                                    ))} */}
 
                                     <MenuItem key="worldwide" value="worldwide">Worldwide</MenuItem>
                                     {countries.map((country) => (

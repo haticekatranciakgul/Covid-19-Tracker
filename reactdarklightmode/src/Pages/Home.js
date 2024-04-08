@@ -9,7 +9,7 @@ import { ThemeProvider, useTheme } from "@mui/material";
 
 
 const sections = [
-  { title: 'Covid-19 Project', url: '/appcovid' },
+  { title: 'COVİD-19 TRACKER PROJECT', url: '/appcovid' },
 
 ];
 

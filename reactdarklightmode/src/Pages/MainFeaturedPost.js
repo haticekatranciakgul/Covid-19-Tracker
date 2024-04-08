@@ -17,12 +17,8 @@ function MainFeaturedPost(props) {
         color: '#fff',
         mb: 4,
         maxHeight:'400px',
-        width: '80%',
+        width: 'auto',
         justifyContent: 'center',
-        display:'flex',
-        alignItems:'center',
-        marginRight:'10%',
-        marginLeft:'10%',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -49,7 +45,7 @@ function MainFeaturedPost(props) {
               p: { md: 12 },
               pr: { md: 0 },
               padding: '20px',
-              width: '500px',
+              width: 'auto',
               height: '300px',
               overflow: 'hidden',
               whiteSpace: 'inherit',
@@ -59,7 +55,7 @@ function MainFeaturedPost(props) {
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            <Typography variant="h6" color="inherit" paragraph>
               {post.description}
             </Typography>
             <Link variant="subtitle1" href="#">
