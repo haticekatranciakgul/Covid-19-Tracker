@@ -50,15 +50,6 @@ function Detail() {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={2}>
                             <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
-                                {/* <Item> {(countryInfo && countryInfo.countryInfo) && (
-                                    <div className="info-container">
-                                        <div className="info-flag" style={{ backgroundImage: `url(${countryInfo.countryInfo.flag})` }} />
-                                        <div className="info-confirmed">Cases: {numeral(countryInfo.cases).format("0,0")}</div>
-                                        <div className="info-recovered">Recovered: {numeral(countryInfo.recovered).format("0,0")}</div>
-                                        <div className="info-deaths">Deaths: {numeral(countryInfo.deaths).format("0,0")}</div>
-                                    </div>
-                                )}</Item> */}
-
                                 {(countryInfo && countryInfo.countryInfo) && (
                                     <Card sx={{ maxWidth: 345 , padding: 3}}>
                                         <CardActionArea >
@@ -82,11 +73,7 @@ function Detail() {
                                             </CardContent>
                                         </CardActionArea>
                                     </Card>
-
-
                                 )}
-
-
                             </Grid>
 
                         </Grid>
