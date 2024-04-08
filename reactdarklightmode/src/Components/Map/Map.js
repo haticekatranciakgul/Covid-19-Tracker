@@ -12,7 +12,9 @@ function Map({countries, casesType,center, zoom}) {
 	      		url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 	      		attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
 	    		/>
-	    		{showDataOnMap(countries,casesType)}
+	    		 {showDataOnMap(countries, casesType).map((element, index) => (
+                    <div key={index}>{element}</div>
+                ))}
 	    	</LeafletMap>
 		</div>
 	)

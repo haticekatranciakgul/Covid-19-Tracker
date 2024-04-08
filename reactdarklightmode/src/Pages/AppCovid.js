@@ -88,10 +88,15 @@ const AppCovid = () => {
                                     onChange={onCountryChange}
                                     value={country}
                                 >
-                                    <MenuItem value="worldwide">Worldwide</MenuItem>
+                                    {/* <MenuItem value="worldwide">Worldwide</MenuItem>
                                     {countries.map((country) => (
                                         <MenuItem value={country.value}>{country}</MenuItem>
 
+                                    ))} */}
+
+                                    <MenuItem key="worldwide" value="worldwide">Worldwide</MenuItem>
+                                    {countries.map((country) => (
+                                        <MenuItem key={country.value} value={country.value}>{country.name}</MenuItem>
                                     ))}
                                 </Select>
                             </FormControl>
@@ -106,7 +111,7 @@ const AppCovid = () => {
                         <Map casesType={caseType} countries={mapCountries} center={mapCenter} zoom={mapZoom} />
                     </div>
 
-                   
+
 
                 </Container>
 
