@@ -90,7 +90,7 @@ const AppCovid = () => {
                                 >
                                     <MenuItem value="worldwide">Worldwide</MenuItem>
                                     {countries.map((country) => (
-                                        <MenuItem value={country.value} key={country}>{country}</MenuItem>
+                                        <MenuItem value={country.value}>{country}</MenuItem>
 
                                     ))}
                                 </Select>

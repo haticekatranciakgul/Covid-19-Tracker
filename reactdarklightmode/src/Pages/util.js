@@ -28,7 +28,7 @@ export const sortData = (data) => {
 export const prettyPrintStat = (stat) =>  stat ? `+${numeral(stat).format("0.0a")}` : "+0";
 export const showDataOnMap= (data, casesType='cases') => 
 	data.map(country => (
-		<Circle
+		<Circle 
 		center={[country.countryInfo.lat, country.countryInfo.long]}
 		fillOpacity={0.4}
 		color={casesTypeColors[casesType].hex}

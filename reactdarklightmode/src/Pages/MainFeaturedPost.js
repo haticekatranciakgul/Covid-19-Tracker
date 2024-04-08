@@ -16,6 +16,13 @@ function MainFeaturedPost(props) {
         backgroundColor: 'grey.800',
         color: '#fff',
         mb: 4,
+        maxHeight:'400px',
+        width: '80%',
+        justifyContent: 'center',
+        display:'flex',
+        alignItems:'center',
+        marginRight:'10%',
+        marginLeft:'10%',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -35,12 +42,18 @@ function MainFeaturedPost(props) {
         }}
       />
       <Grid container>
-        <Grid item md={6}>
+        <Grid item xl={10} lg={10} md={12}>
           <Box
             sx={{
               position: 'relative',
-              p: { xs: 3, md: 6 },
+              p: { md: 12 },
               pr: { md: 0 },
+              padding: '20px',
+              width: '500px',
+              height: '300px',
+              overflow: 'hidden',
+              whiteSpace: 'inherit',
+              textOverflow: 'ellipsis',
             }}
           >
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>

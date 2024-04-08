@@ -19,7 +19,6 @@ const App =() => {
                 <Routes>
                     <Route path="/" element={<Home></Home>}></Route>
                     <Route path="/appcovid" element={<AppCovid></AppCovid>}></Route>
-                    {/* <Route path="/detail" element={<Detail />} /> */}
                     <Route path="/:country" element={<Detail></Detail>}></Route>
                 </Routes>
                 </BrowserRouter>
