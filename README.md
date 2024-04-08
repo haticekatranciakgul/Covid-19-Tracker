@@ -71,7 +71,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
+https://github.com/haticekatranciakgul/Covid-19-Tracker/assets/76768140/689215ae-7869-49a5-8ccd-e4d71a0b8dad
 
-[Screen Recording 2024-04-08 at 18.18.57.zip](https://github.com/haticekatranciakgul/Covid-19-Tracker/files/14907577/Screen.Recording.2024-04-08.at.18.18.57.zip)
+
 
 
