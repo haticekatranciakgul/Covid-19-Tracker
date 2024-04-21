@@ -8,7 +8,7 @@ import Navbar from "./Pages/Navbar";
 import Detail from "./Components/DetailPage/Detail";
 
 
-const App =() => {
+const App =() => { 
     const [theme, colorMode] = useMode();
     return <div>
         <ColorModeContext.Provider value={colorMode}>
